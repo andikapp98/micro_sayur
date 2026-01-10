@@ -35,7 +35,7 @@ func (cfg Config) ConnectionPostgres() (*Postgres, error) {
 		return nil, err
 	}
 	seeds.SeedRole(db)
-	seeds.SeeAdmin(db)
+	seeds.SeedAdmin(db)
 
 	sqlDB.SetMaxOpenConns(cfg.PsqlDB.DBMaxOpen)
 	sqlDB.SetMaxIdleConns(cfg.PsqlDB.DBMaxIdle)

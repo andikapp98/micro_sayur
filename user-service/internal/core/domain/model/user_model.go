@@ -9,6 +9,7 @@ type User struct {
 	Password   string
 	Address    string
 	Phone      string
+	Photo      string
 	Lat        string
 	Lng        string
 	IsVerified bool
